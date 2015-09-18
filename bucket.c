@@ -1197,7 +1197,6 @@ PHP_METHOD(Bucket, mapKey)
 	char *key = NULL;
 	int key_len = 0;
 	int srvix, vbid;
-	int result;
 
 	if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "s", &key, &key_len) == FAILURE) {
 		RETURN_NULL();
